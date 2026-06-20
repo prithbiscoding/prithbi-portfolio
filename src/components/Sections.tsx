@@ -99,7 +99,7 @@ export default function Sections() {
 
           <div className="space-y-6 text-lg text-gray-200 leading-relaxed">
             <p>
-              I'm{" "}
+              I&apos;m{" "}
               <span className="text-accentOrange font-semibold">
                 Prithbi Biswas
               </span>
@@ -252,11 +252,11 @@ export default function Sections() {
           className="glass-card max-w-3xl w-full text-center"
         >
           <h2 className="text-5xl font-bold mb-6">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
 
           <p className="text-xl text-gray-300 mb-10">
-            I'm actively looking for Software Engineering and AI internships.
+            I&apos;m actively looking for Software Engineering and AI internships.
             Feel free to reach out!
           </p>
 

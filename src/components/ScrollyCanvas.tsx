@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useScroll, useMotionValueEvent } from "framer-motion";
 
 const FRAME_COUNT = 151;
 
@@ -31,6 +31,7 @@ export default function ScrollyCanvas() {
       loadedImages.push(img);
     }
     setImages(loadedImages);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Function to draw a specific frame
@@ -82,6 +83,7 @@ export default function ScrollyCanvas() {
     handleResize(); // Initial setup
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [images, scrollYProgress]);
 
   // Handle scroll events
